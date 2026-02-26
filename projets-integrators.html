@@ -278,55 +278,6 @@
     color: #94a3b8;
   }
   .footer strong { color: #475569; }
-
-  .export-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: linear-gradient(135deg, #2563a8, #3b82f6);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(37,99,168,0.4);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 1000;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .export-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(37,99,168,0.5); }
-  .export-btn:active { transform: translateY(0); }
-
-  .export-btn-word {
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    background: linear-gradient(135deg, #1d6f42, #2e9e63);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(29,111,66,0.4);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 1000;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .export-btn-word:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(29,111,66,0.5); }
-  .export-btn-word:active { transform: translateY(0); }
-  @media print {
-    .export-btn-word { display: none; }
-  }
 </style>
 </head>
 <body>
@@ -337,7 +288,7 @@
     <div class="header-top">
       <div>
         <div class="institution">IRT 42</div>
-        <h1>Projets <span>JEE Avancé</span></h1>
+        <h1>Projets <span>IRT 42</span></h1>
       </div>
     </div>
     <div class="badge-container">
@@ -345,7 +296,6 @@
       <span class="badge">Angular 17+</span>
       <span class="badge">Spring Boot 3.x</span>
       <span class="badge">Flutter / React Native</span>
-      <span class="badge">PostgreSQL</span>
     </div>
   </div>
 
@@ -409,10 +359,66 @@
       </div>
     </div>
 
-    <!-- PROJET 2 -->
+    <!-- PROJET 2 — Gestion Scolaire (anciennement 3) -->
     <div class="project-card">
       <div class="card-header">
         <div class="project-num p2">2</div>
+        <div class="card-title-block">
+          <h3>Plateforme de Gestion Scolaire Intelligente</h3>
+          <p>Gestion complète des établissements scolaires avec suivi académique, communication parents-école et paiement intégré</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="two-cols">
+          <div>
+            <div class="col-title"><span class="dot web-dot"></span> Application Web</div>
+            <ul class="feature-list">
+              <li>Authentification sécurisée multi-rôles (Administrateur, Enseignant, Personnel administratif)</li>
+              <li>Gestion des élèves : dossiers scolaires, informations personnelles et parcours académique</li>
+              <li>Gestion des classes, niveaux et affectations</li>
+              <li>Saisie et gestion des notes avec calcul automatique des moyennes</li>
+              <li>Génération des bulletins scolaires et relevés de notes (PDF)</li>
+              <li>Gestion des absences et retards avec suivi en temps réel</li>
+              <li>Création et gestion des emplois du temps et attribution des salles</li>
+              <li>Organisation de la maquette pédagogique (matières, programmes, enseignants)</li>
+              <li>Tableau de bord administratif (statistiques, suivi académique, performances)</li>
+              <li>Gestion des frais scolaires, suivi des paiements et notifications parents</li>
+            </ul>
+          </div>
+          <div>
+            <div class="col-title"><span class="dot mobile-dot"></span> Application Mobile (Parents)</div>
+            <ul class="feature-list">
+              <li>Consultation des notes et moyennes des enfants</li>
+              <li>Accès aux bulletins scolaires</li>
+              <li>Suivi des absences et notifications instantanées</li>
+              <li>Consultation de l'emploi du temps</li>
+              <li>Réception de notifications scolaires (annonces, résultats, alertes)</li>
+              <li>Paiement des frais scolaires depuis l'application</li>
+              <li>Historique des paiements et factures</li>
+            </ul>
+          </div>
+        </div>
+        <div class="notions-block">
+          <div class="notions-title">⚡ Notions Spring Boot / Angular couvertes</div>
+          <div class="tags">
+            <span class="tag boot">Spring Security (multi-rôles)</span>
+            <span class="tag boot">JWT + Refresh Token</span>
+            <span class="tag boot">WebSocket (notifications temps réel)</span>
+            <span class="tag boot">Génération PDF (bulletins scolaires)</span>
+            <span class="tag boot">REST API sécurisée</span>
+            <span class="tag angular">Angular Reactive Forms</span>
+            <span class="tag angular">NgRx (état global)</span>
+            <span class="tag mobile">Push Notifications</span>
+            <span class="tag mobile">Gestion des paiements intégrée</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJET 3 — Gestion Minière (anciennement 2) -->
+    <div class="project-card">
+      <div class="card-header">
+        <div class="project-num p3">3</div>
         <div class="card-title-block">
           <h3>Système de Gestion Minière</h3>
           <p>Suivi des opérations d'extraction, gestion des équipements et sécurité des sites miniers</p>
@@ -452,54 +458,6 @@
             <span class="tag angular">Charts & Reporting (Chart.js)</span>
             <span class="tag angular">Pagination & Recherche avancée</span>
             <span class="tag mobile">Formulaires hors-ligne</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJET 3 -->
-    <div class="project-card">
-      <div class="card-header">
-        <div class="project-num p3">3</div>
-        <div class="card-title-block">
-          <h3>Plateforme E-Learning Interactive</h3>
-          <p>Création et suivi de formations en ligne avec parcours personnalisés</p>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="two-cols">
-          <div>
-            <div class="col-title"><span class="dot web-dot"></span> Application Web</div>
-            <ul class="feature-list">
-              <li>Espace formateur : création de cours (vidéos, quiz, ressources)</li>
-              <li>Parcours d'apprentissage personnalisés par niveau</li>
-              <li>Système de quiz interactifs avec correction automatique</li>
-              <li>Suivi de progression des apprenants (tableaux de bord)</li>
-              <li>Système de certification avec génération de diplômes PDF</li>
-              <li>Forum de discussion par cours (temps réel)</li>
-              <li>Tableau de bord admin (inscriptions, statistiques, revenus)</li>
-            </ul>
-          </div>
-          <div>
-            <div class="col-title"><span class="dot mobile-dot"></span> Application Mobile</div>
-            <ul class="feature-list">
-              <li>Consultation des cours et vidéos (mode hors-ligne)</li>
-              <li>Quiz et exercices interactifs depuis l'app</li>
-              <li>Suivi de progression et badges de réussite</li>
-              <li>Notifications push (nouveau cours, rappel, certification)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="notions-block">
-          <div class="notions-title">⚡ Notions Spring Boot / Angular couvertes</div>
-          <div class="tags">
-            <span class="tag boot">WebSocket (forum temps réel)</span>
-            <span class="tag boot">Génération PDF (certificats)</span>
-            <span class="tag boot">Spring Data JPA (relations complexes)</span>
-            <span class="tag boot">Scheduled Tasks (@Scheduled)</span>
-            <span class="tag angular">NgRx Effects</span>
-            <span class="tag angular">Guards & Interceptors</span>
-            <span class="tag mobile">Mode hors-ligne</span>
           </div>
         </div>
       </div>
@@ -625,7 +583,40 @@
     </div>
 
     <!-- Phase 3 -->
-    <div class="phase-label" style="margin-top:16px;">🎤 Phase 3 — Soutenance</div>
+    <div class="phase-label" style="margin-top:16px;">🔄 Phase 3 — Méthodologie Scrum</div>
+    <div class="req-grid">
+      <div class="req-item">
+        <div class="req-icon">🗓</div>
+        <div>
+          <h4>Sprints hebdomadaires</h4>
+          <p>Le projet est découpé en sprints d'une semaine. Chaque sprint doit avoir un objectif clair, un backlog défini et une rétrospective à la fin.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">📌</div>
+        <div>
+          <h4>Product Backlog & User Stories</h4>
+          <p>Rédaction de User Stories au format standard (<em>En tant que… je veux… afin de…</em>) avec critères d'acceptation et estimation en points.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">🧑‍🤝‍🧑</div>
+        <div>
+          <h4>Rôles Scrum définis</h4>
+          <p>Chaque groupe doit désigner un <strong>Product Owner</strong> et un <strong>Scrum Master</strong>. Les rôles sont fixes pour toute la durée du projet.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">📋</div>
+        <div>
+          <h4>Tableau Kanban (Jira / Trello)</h4>
+          <p>Suivi des tâches via un outil Kanban (colonnes : To Do, In Progress, Review, Done). Le tableau doit être partagé et mis à jour en continu.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="phase-label" style="margin-top:16px;">🎤 Phase 4 — Soutenance</div>
     <div class="req-grid">
       <div class="req-item">
         <div class="req-icon">📊</div>
